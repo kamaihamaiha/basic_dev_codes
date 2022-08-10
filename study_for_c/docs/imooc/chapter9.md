@@ -1,15 +1,15 @@
 ## 字符串的应用
 
-- [判断字符的类型及原理](Codes/basic_dev_codes/study_for_c/imooc/chapter9/01.character_type.c)
-- [字符串与其他数值类型的转换](Codes/basic_dev_codes/study_for_c/imooc/chapter9/02.convert.c)
-- [字符串长度比较](Codes/basic_dev_codes/study_for_c/imooc/chapter9/03.string_length_compare.c)
-- [查找字符与子串](Codes/basic_dev_codes/study_for_c/imooc/chapter9/04.find_char_and_substring.c)
-- [字符串的拆分](Codes/basic_dev_codes/study_for_c/imooc/chapter9/05.string_tokenize.c)
-- [字符串的连接和复制](Codes/basic_dev_codes/study_for_c/imooc/chapter9/06.string_concat_copy.c)
-- [几个常见的内存操作函数](Codes/basic_dev_codes/study_for_c/imooc/chapter9/07.mem_op.c)
+- [判断字符的类型及原理](../../imooc/chapter9/01.character_type.c)
+- [字符串与其他数值类型的转换](../../imooc/chapter9/02.convert.c)
+- [字符串长度比较](../../imooc/chapter9/03.string_length_compare.c)
+- [查找字符与子串](../../imooc/chapter9/04.find_char_and_substring.c)
+- [字符串的拆分](../../imooc/chapter9/05.string_tokenize.c)
+- [字符串的连接和复制](../../imooc/chapter9/06.string_concat_copy.c)
+- [几个常见的内存操作函数](../../imooc/chapter9/07.mem_op.c)
 - [C99 的 restrict]()
-- [C11 安全版本的函数](Codes/basic_dev_codes/study_for_c/imooc/chapter9/09.save_version.c)
-- [宽字符与窄字符的转换](Codes/basic_dev_codes/study_for_c/imooc/chapter9/09.save_version.c)
+- [C11 安全版本的函数](../../imooc/chapter9/09.save_version.c)
+- [宽字符与窄字符的转换](../../imooc/chapter9/09.save_version.c)
 
 
 #### C99 的 restrict
