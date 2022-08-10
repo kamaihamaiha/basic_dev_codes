@@ -2,7 +2,7 @@
 
 
 
-- [C 语言](./imooc_for_c/README.md)
+- [C 语言](./study_for_c/README.md)
 - C++
 - Java
 - Kotlin
