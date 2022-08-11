@@ -15,6 +15,7 @@ include_directories("imooc/chapter12/tinycthread/include")
 file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/*.c"
         "${CMAKE_CURRENT_SOURCE_DIR}/imooc/chapter*/*.c"
         "${CMAKE_CURRENT_SOURCE_DIR}/books/c_programming_language/chapter*/*/*.c"
+        "${CMAKE_CURRENT_SOURCE_DIR}/books/c_programming_language/c*/*/*.c"
         )
 foreach(file ${files})
     get_filename_component(name ${file} NAME)
