@@ -11,7 +11,12 @@ include_directories(
         )
 
 # 不能添加多个源文件，想运行哪个源文件，临时放开（注释）
-add_executable(main chapter_6/section_1/6.1.2.cpp)
+
+# cppThings
+add_executable(main cppThings/practice/day3/3-3-游泳池.cpp)
+#add_executable(main cppThings/practice/day2/2-6-结构体.cpp)
+
+#add_executable(main chapter_6/section_1/6.1.2.cpp)
 #add_executable(main chapter_6/section_1/6.1.1.cpp)
 #add_executable(main chapter_6/section_1/6.1.cpp)
 #add_executable(main chapter_5/5.6.cpp)
