@@ -1,6 +1,6 @@
 ## 多级指针与指针数组
 
-[代码](./demo-4/demo-4/demo-4.cpp)
+[代码](Codes/basic_dev_codes/study_for_c/c_from_hello_code/pointer_part/demo-4/demo-4/demo-4.cpp)
 
 ### 多级指针
 `fun1()`

@@ -1,6 +1,6 @@
 ## 指针与数组
 
-[代码](./demo-2/demo-2/demo-2.cpp)
+[代码](Codes/basic_dev_codes/study_for_c/c_from_hello_code/pointer_part/demo-2/demo-2/demo-2.cpp)
 
 ### 获取数组首地址
 ```

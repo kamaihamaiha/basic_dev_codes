@@ -1,6 +1,6 @@
 ## 指针与多维数组
 
-[代码](demo-5/demo-5/demo-5.cpp)
+[代码](../demo-5/demo-5/demo-5.cpp)
 
 ### 数组指针
 

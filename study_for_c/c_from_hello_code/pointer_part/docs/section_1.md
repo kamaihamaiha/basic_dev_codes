@@ -1,6 +1,6 @@
 ### 指针的运算
 
-[代码](./demo-1/demo-1/demo-1.cpp)
+[代码](Codes/basic_dev_codes/study_for_c/c_from_hello_code/pointer_part/demo-1/demo-1/demo-1.cpp)
 
 #### 指针与整型加减法
 
