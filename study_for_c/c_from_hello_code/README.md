@@ -20,3 +20,4 @@
 - [22 输入输出缓存](./22_IO_cache/22_IO_cache/22_IO_cache.cpp)  
 - [...]()  
 - [指针篇](./pointer_part/readme.md)
+- [const 关键字](../docs/c_from_hello_code/const.md)

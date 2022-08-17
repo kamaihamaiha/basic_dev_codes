@@ -9,5 +9,4 @@
 - [声明器](./docs/section_7.md)
 - [函数指针与数组](./docs/section_8.md)
 - [字符串与字符指针](./docs/section_9.md)
-- [const 关键字](./docs/section_10.md)
 
