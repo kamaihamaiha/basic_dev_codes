@@ -22,3 +22,4 @@
 - [指针篇](./pointer_part/readme.md)
 - [const 关键字](../docs/c_from_hello_code/const.md)
 - [字符串处理函数](../docs/c_from_hello_code/string_fun.md)
+- [结构化数据](../docs/c_from_hello_code/struct_data.md)
