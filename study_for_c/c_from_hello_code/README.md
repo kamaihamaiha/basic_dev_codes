@@ -24,3 +24,4 @@
 - [字符串处理函数](../docs/c_from_hello_code/string_fun.md)
 - [结构化数据](../docs/c_from_hello_code/struct_data.md)
 - [联合与枚举](../docs/c_from_hello_code/union_enum.md)
+- [标识符作用域](../docs/c_from_hello_code/id_scope.md)
