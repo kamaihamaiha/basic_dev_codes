@@ -26,7 +26,7 @@
 - [联合与枚举 8min](../docs/c_from_hello_code/union_enum.md)
 - [标识符作用域 8.5min](../docs/c_from_hello_code/id_scope.md)
 - [预处理指令 14min](../docs/c_from_hello_code/pre_cmd.md)
-- [typedef 关键词 10min]()
+- [typedef 关键词 10min](../docs/c_from_hello_code/typedef.md)
 - [条件编译 6.5min]()
 - [多文件代码 8:42]()
 - [更复杂的多文件代码 13min]()
