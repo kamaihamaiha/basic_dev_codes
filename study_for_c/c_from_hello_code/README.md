@@ -28,7 +28,7 @@
 - [预处理指令 14min](../docs/c_from_hello_code/pre_cmd.md)
 - [typedef 关键词 10min](../docs/c_from_hello_code/typedef.md)
 - [条件编译 6.5min](../docs/c_from_hello_code/condition_compile.md)
-- [多文件代码 8:42]()
+- [多文件代码 8:42](../docs/c_from_hello_code/multi-file_code.md)
 - [更复杂的多文件代码 13min]()
 - [存储类别 13min]()
 - [文件 40min]()
