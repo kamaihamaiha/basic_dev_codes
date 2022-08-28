@@ -31,7 +31,7 @@
 - [多文件代码 8:42](../docs/c_from_hello_code/multi-file_code.md)
 - [更复杂的多文件代码 13min](../docs/c_from_hello_code/multi-file-hard_code.md)
 - [存储类别 13min](../docs/c_from_hello_code/store_type.md)
-- [文件 40min]()
+- [文件 40min](../docs/c_from_hello_code/file.md)
 - [位操作 22min]()
 - [动态内存管理 12.5min]()
 - [主函数参数 10:22]()
