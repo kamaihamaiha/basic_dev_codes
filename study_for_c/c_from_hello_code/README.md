@@ -34,4 +34,4 @@
 - [文件 40min](../docs/c_from_hello_code/file.md)
 - [位操作 22min](../docs/c_from_hello_code/bit_operation.md)
 - [动态内存管理 12.5min](../docs/c_from_hello_code/dynamic_mem.md)
-- [主函数参数 10:22]()
+- [主函数参数 10:22](../docs/c_from_hello_code/main_fun_params.md)
