@@ -3,7 +3,7 @@
 
 
 - [C 语言](./study_for_c/README.md)
-- C++
+- [C++](./docs/cpp/readme.md)
 - Java
 - Kotlin
 - Shell
