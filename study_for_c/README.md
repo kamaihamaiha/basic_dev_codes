@@ -4,6 +4,7 @@
 ### 视频课程
 - [mooc 网](./docs/imooc/readme.md)
 - [你好编程](./c_from_hello_code/README.md)
+- [gcc](./docs/gcc/README.md)
 
 
 ### 教材
