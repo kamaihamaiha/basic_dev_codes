@@ -17,6 +17,6 @@ vector<Sales_item> Sales_vec;
 
 ---
 
-- [3.3.1 定义和初始化 vector 对象](Codes/basic_dev_codes/study_for_cpp/doc/cpp_primary/chapter_3/section_3_1.md)
-- [3.3.2 向 vector 对象添加元素](Codes/basic_dev_codes/study_for_cpp/doc/cpp_primary/chapter_3/section_3_2.md)
-- [3.3.3 其他 vector 操作](Codes/basic_dev_codes/study_for_cpp/doc/cpp_primary/chapter_3/section_3_3.md)
+- [3.3.1 定义和初始化 vector 对象](./section_3_1.md)
+- [3.3.2 向 vector 对象添加元素](./section_3_2.md)
+- [3.3.3 其他 vector 操作](./section_3_3.md)

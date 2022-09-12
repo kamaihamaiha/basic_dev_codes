@@ -1,5 +1,5 @@
 ### 向 vector 对象添加元素
-[代码](Codes/basic_dev_codes/study_for_cpp/cpp_primary/chapter_3/section_3/main.cpp)
+[代码](../../../cpp_primary/chapter_3/section_3/main.cpp)
 
 使用函数：**push_back**
 ```c++
