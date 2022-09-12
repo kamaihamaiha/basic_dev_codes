@@ -1,6 +1,9 @@
 ### 其他 vector 操作
-[代码](Codes/basic_dev_codes/study_for_cpp/cpp_primary/chapter_3/section_3/main.cpp)
+[代码](../../../cpp_primary/chapter_3/section_3/main.cpp)
 ```c++
+v.insert()
+v.pop_back()
+v.erase()
 v.empty()
 v.size()
 v.push_back(t)

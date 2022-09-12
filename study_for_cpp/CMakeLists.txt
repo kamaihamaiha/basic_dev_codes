@@ -13,7 +13,9 @@ include_directories(
 # 不能添加多个源文件，想运行哪个源文件，临时放开（注释）
 
 # from mooc
-add_executable(from_mooc_4_1 from_mooc/c_4/4_1.cpp)
+add_executable(from_mooc_vector cpp_primary/chapter_3/section_3/main.cpp)
+#add_executable(from_mooc_vector cpp_primary/chapter_3/section_3/main_3.cpp)
+#add_executable(from_mooc_4_1 from_mooc/c_4/4_1.cpp)
 # cppThings
 #add_executable(main cppThings/practice/day3/3-3-游泳池.cpp)
 #add_executable(main cppThings/practice/day2/2-6-结构体.cpp)

@@ -13,7 +13,7 @@ int main(){
   cout << "输入数字，按下 -1 结束:" << endl;
   while (cin >> num) {
     if (num == -1) break;
-    vi.push_back(num);
+    vi.push_back(num); // 尾部添加
   }
   cout << "size: " << vi.size() << endl;
 

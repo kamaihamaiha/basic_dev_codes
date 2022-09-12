@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
   // 例题：整数 1-9 求平方
-  vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9};
+  vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9};
   for (auto &value : v) {
     value *= value;
   }
