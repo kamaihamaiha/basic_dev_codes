@@ -11,4 +11,4 @@
 - [结构体](../../../../cppThings/practice/day2/2-6-结构体.cpp)
 - [递归 1](../../../../cppThings/practice/day2/2-7-递归.cpp)
 - [递归 2]()
-- [静态变量](../../../../chapter_6/section_1/6.1.1.cpp)
+- [静态变量](Codes/basic_dev_codes/study_for_cpp/cpp_primary/chapter_6/section_1/6.1.1.cpp)

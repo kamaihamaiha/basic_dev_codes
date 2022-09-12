@@ -1,0 +1,10 @@
+### 第 7 章 类
+
+- [7.1 定义抽象数据类型](Codes/basic_dev_codes/study_for_cpp/doc/cpp_primary/chapter_7/section_1.md)
+- [7.2 访问控制与封装]()
+- [7.3 类的其他特性]()
+- [7.4 类的作用域]()
+- [7.5 构造函数再探]()
+- [7.6 类的静态成员]()
+
+书本上太枯燥，转战[浙江大学翁恺的课程](Codes/basic_dev_codes/study_for_cpp/doc/zju/README.md)

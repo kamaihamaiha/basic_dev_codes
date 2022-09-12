@@ -5,9 +5,9 @@ set(CMAKE_CXX_STANDARD 11)
 
 # 头文件
 include_directories(
-        chapter_1/section_5/*.h
-        chapter_2/section_6/*.h
-        chapter_6/section_1/*.h
+        cpp_primary/chapter_1/section_5/*.h
+        cpp_primary/chapter_2/section_6/*.h
+        cpp_primary/chapter_6/section_1/*.h
         )
 
 # 不能添加多个源文件，想运行哪个源文件，临时放开（注释）
