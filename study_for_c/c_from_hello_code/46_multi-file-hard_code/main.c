@@ -1,5 +1,4 @@
 #include "person.h"
-#include "person.h"
 
 int main(){
 
