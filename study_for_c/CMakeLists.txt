@@ -19,7 +19,7 @@ file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/*.c"
         )
 foreach(file ${files})
     get_filename_component(name ${file} NAME)
-    add_executable(${name} ${file} imooc/chapter5/src/Factorial.c imooc/chapter12/tinycthread/tinycthread.c)
+    add_executable(${name} ${file} imooc/chapter5/src/Factorial.c imooc/chapter12/tinycthread/tinycthread.c imooc/chapter9/util.c)
     target_compile_definitions(${name} PUBLIC DEBUG)
 
     if (UNIX OR Linux)

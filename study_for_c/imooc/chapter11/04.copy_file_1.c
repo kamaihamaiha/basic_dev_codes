@@ -3,8 +3,6 @@
  *
  */
 #include <stdio.h>
-#include <errno.h>
-#include <string.h>
 #include <io_utils_teacher.h>
 
 //定义各种异常的宏
@@ -23,7 +21,7 @@
  * @param dest 新的文件副本
  * @return 成功返回 0，失败返回自定义的错误码
  */
-int CopyFile(const char *src, char const *dest) {
+int CopyFile(char const *src, char const *dest) {
   if (!src || !dest) {
     return COPY_ILLEGAL_ARGUMENTS;
   }
