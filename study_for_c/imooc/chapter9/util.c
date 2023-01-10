@@ -22,12 +22,12 @@ int main(){
     int ret = 0;
     FILE *f_src = NULL;
     FILE *f_des = NULL;
-    char *file_src_path = "audio/article_0.aac";
+    char *file_src_path = "audio/article_demo.aac";
     char file_des_path[256] = { 0 };
-
+    // /sdcard/Android/data/com.eusoft.ting.en/files/.eudb_en/.media/.recording/7be17688-1ae2-11e8-b7f2-000c29ffef9b_1.aac
     const char* articleID = "7be17688-1ae2-11e8-b7f2-000c29ffef9b";
 
-    for (int i = 0; i < 100; ++i){
+    for (int i = 0; i < 357; ++i){
         getFileName(file_des_path, articleID,i);
         ret = CopyFile(file_src_path, file_des_path);
 
