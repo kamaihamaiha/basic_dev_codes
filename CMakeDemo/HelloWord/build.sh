@@ -6,4 +6,5 @@ cd output
 
 cmake .. # 在临时目录中创建工程
 make
-./hello
+./hello-world
+./cmd-dir
