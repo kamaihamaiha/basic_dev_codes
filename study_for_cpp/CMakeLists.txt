@@ -12,8 +12,12 @@ include_directories(
 
 # 不能添加多个源文件，想运行哪个源文件，临时放开（注释）
 
+# from suet
+add_executable(hello suet/1.3_demo.cpp)
+#add_executable(hello suet/hello.cpp)
+
 # from mooc
-add_executable(from_mooc_vector cpp_primary/chapter_3/section_3/main.cpp)
+#add_executable(from_mooc_vector cpp_primary/chapter_3/section_3/main.cpp)
 #add_executable(from_mooc_vector cpp_primary/chapter_3/section_3/main_3.cpp)
 #add_executable(from_mooc_4_1 from_mooc/c_4/4_1.cpp)
 # cppThings
