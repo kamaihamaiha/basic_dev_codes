@@ -31,7 +31,7 @@ static const char *type_string(int type)
         return "<SHARE>";
     case AVIO_ENTRY_WORKGROUP:
         return "<WORKGROUP>";
-    case AVIO_ENTRY_UNKNOWN:
+    case AVIO_ENTRY_UNKNOWN:`
     default:
         break;
     }
