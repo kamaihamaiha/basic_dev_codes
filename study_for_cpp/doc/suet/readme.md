@@ -19,4 +19,5 @@
 
 #### chapter4
 
+- [4.4 typedef](./4.4-typedef.md)
 - [4.3 structures-unions-and-enumerations](./4.3-structures-unions-and-enumerations.md)
