@@ -28,5 +28,5 @@
 - [5.1 pointers](./5.1-pointers.md)
 - [5.2 pointers-and-arrays](./5.2-pointers-and-arrays.md)
 - [5.3 allocate-memory-C-style](./5.3-allocate-memory-C-style.md)
-- 5.4 allocate-memory-CPP-style
+- [5.4 allocate-memory-CPP-style](./5.4-allocate-memory-Cpp-style.md)
 
