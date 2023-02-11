@@ -28,7 +28,7 @@ int main(){
 
     // 其他字符类型
     const wchar_t s5[] = L"abce";
-//    const ç s9[] = u"abcd";
+    const char16_t s9[] = u"abcd";
 //    const char32_t s6[] = U"abce";
 
     // 字符串操作

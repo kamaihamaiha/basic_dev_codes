@@ -22,3 +22,11 @@
 - [4.2 string](./4.2-string.md)
 - [4.3 structures-unions-and-enumerations](./4.3-structures-unions-and-enumerations.md)
 - [4.4 typedef](./4.4-typedef.md)
+
+#### chapter5
+
+- [5.1 pointers](./5.1-pointers.md)
+- 5.2 pointers-and-arrays
+- 5.3 allocate-memory-C-style
+- 5.4 allocate-memory-CPP-style
+
