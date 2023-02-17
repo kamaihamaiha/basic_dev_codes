@@ -30,6 +30,11 @@
 - [5.3 allocate-memory-C-style](./5.3-allocate-memory-C-style.md)
 - [5.4 allocate-memory-CPP-style](./5.4-allocate-memory-Cpp-style.md)
 
+#### chapter6
+
+- [6.1 function](./6.1-function.md)
+- [6.2 function-parameters](./6.2-function-parameters.md)
+
 #### chapter8
 
 - [8.1 c-and-cpp-with-arm](./8.1-c-and-cpp-with-arm.md)
