@@ -34,6 +34,9 @@
 
 - [6.1 function](./6.1-function.md)
 - [6.2 function-parameters](./6.2-function-parameters.md)
+- [6.3 references](./6.3-references.md)
+- [6.4 return-statement](./6.4-return-statement.md)
+- [6.5 inline-function](./6.5-inline-function.md)
 
 #### chapter8
 
