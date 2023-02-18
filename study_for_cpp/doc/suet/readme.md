@@ -38,6 +38,10 @@
 - [6.4 return-statement](./6.4-return-statement.md)
 - [6.5 inline-function](./6.5-inline-function.md)
 
+#### chapter7
+
+- [7.1 default-arguments](./7.1-default-arguments.md)
+
 #### chapter8
 
 - [8.1 c-and-cpp-with-arm](./8.1-c-and-cpp-with-arm.md)
