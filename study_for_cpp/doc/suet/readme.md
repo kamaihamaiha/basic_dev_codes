@@ -41,6 +41,10 @@
 #### chapter7
 
 - [7.1 default-arguments](./7.1-default-arguments.md)
+- [7.2 function-overloading](./7.2-function-overloading.md)
+- [7.3 function-templates](./7.3-function-templates.md)
+- [7.4 function-pointers-and-references](./7.4-function-pointers-and-references.md)
+- [7.5 recursive-functions](./7.5-recursive-function.md)
 
 #### chapter8
 
