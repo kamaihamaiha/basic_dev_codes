@@ -49,4 +49,5 @@
 #### chapter8
 
 - [8.1 c-and-cpp-with-arm](./8.1-c-and-cpp-with-arm.md)
+- [8.2 speedup-your-program](./8.2-speedup-your-program.md)
 
