@@ -50,4 +50,9 @@
 
 - [8.1 c-and-cpp-with-arm](./8.1-c-and-cpp-with-arm.md)
 - [8.2 speedup-your-program](./8.2-speedup-your-program.md)
+- [8.3 an-example-with-simd-and-openmp](./8.3-an-example-with-simd-and-openmp.md)
+- [8.4 avoid-memory-copy-in-opencv](./8.4-avoid-memory-copy-in-opencv.md)
 
+#### chapter9
+
+- [9.1 classes-and-objects](./9.1-classes-and-objects.md)
