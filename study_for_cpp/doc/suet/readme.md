@@ -4,7 +4,7 @@
 
 ### 总共 73节
 
-- 最新进展：p6
+- 最新进展：p40
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -56,3 +56,5 @@
 #### chapter9
 
 - [9.1 classes-and-objects](./9.1-classes-and-objects.md)
+- [9.2 constructors-and-destructors](./9.2-constructors-and-destructors.md)
+- [9.3 this-pointer](./9.3-this-pointer.md)
