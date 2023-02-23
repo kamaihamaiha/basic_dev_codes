@@ -58,3 +58,4 @@
 - [9.1 classes-and-objects](./9.1-classes-and-objects.md)
 - [9.2 constructors-and-destructors](./9.2-constructors-and-destructors.md)
 - [9.3 this-pointer](./9.3-this-pointer.md)
+- [9.4 const-and-static-members](./9.4-const-and-static-members.md)
