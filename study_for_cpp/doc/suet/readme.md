@@ -4,7 +4,7 @@
 
 ### 总共 73节
 
-- 最新进展：p40
+- 最新进展：p42
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -59,3 +59,8 @@
 - [9.2 constructors-and-destructors](./9.2-constructors-and-destructors.md)
 - [9.3 this-pointer](./9.3-this-pointer.md)
 - [9.4 const-and-static-members](./9.4-const-and-static-members.md)
+
+#### chapter10
+
+- [10.1 operator-in-opencv](./10.1-operator-in-opencv.md)
+- [10.2 operator-overloading](./10.2-operator-overloading.md)
