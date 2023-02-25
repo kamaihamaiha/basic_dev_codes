@@ -64,3 +64,4 @@
 
 - [10.1 operator-in-opencv](./10.1-operator-in-opencv.md)
 - [10.2 operator-overloading](./10.2-operator-overloading.md)
+- [10.3 friend-functions](./10.3-friend-functions.md)
