@@ -1,10 +1,10 @@
 ## 南方科技大学 —— 于仕琪 C++ 课程
 
-[课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=4&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
+[课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=47)
 
 ### 总共 73节
 
-- 最新进展：p42
+- 最新进展：p46
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -65,3 +65,5 @@
 - [10.1 operator-in-opencv](./10.1-operator-in-opencv.md)
 - [10.2 operator-overloading](./10.2-operator-overloading.md)
 - [10.3 friend-functions](./10.3-friend-functions.md)
+- [10.4 user-defined-type-conversion](./10.4-user-defined-type-conversion.md)
+- [10.5 increment-and-decrement-operator-overloading](./10.5-increment-and-decrement-operator-overloading.md)
