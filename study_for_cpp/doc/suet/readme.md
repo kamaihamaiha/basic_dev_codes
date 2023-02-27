@@ -71,3 +71,4 @@
 #### chapter11
 
 - [11.1 some-default-operations](./11.1-some-default-operations.md)
+- [11.2 an-example-with-dynamic-memory](./11.2-an-example-with-dynamic-memory.md)
