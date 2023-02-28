@@ -4,7 +4,7 @@
 
 ### 总共 73节
 
-- 最新进展：p47
+- 最新进展：p49
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -72,3 +72,4 @@
 
 - [11.1 some-default-operations](./11.1-some-default-operations.md)
 - [11.2 an-example-with-dynamic-memory](./11.2-an-example-with-dynamic-memory.md)
+- [11.3 solution1-hard-copy](./11.3-solution1-hard-copy.md)
