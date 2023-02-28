@@ -73,3 +73,5 @@
 - [11.1 some-default-operations](./11.1-some-default-operations.md)
 - [11.2 an-example-with-dynamic-memory](./11.2-an-example-with-dynamic-memory.md)
 - [11.3 solution1-hard-copy](./11.3-solution1-hard-copy.md)
+- [11.4 solution2-soft-copy](./11.4-solution2-soft-copy.md)
+- [11.5 smart-pointers](./11.5-smart-pointers.md)
