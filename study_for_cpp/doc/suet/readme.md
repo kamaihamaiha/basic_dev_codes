@@ -1,10 +1,10 @@
 ## 南方科技大学 —— 于仕琪 C++ 课程
 
-[课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=47)
+[课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=52&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
 
 ### 总共 73节
 
-- 最新进展：p49
+- 最新进展：p52
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -75,3 +75,7 @@
 - [11.3 solution1-hard-copy](./11.3-solution1-hard-copy.md)
 - [11.4 solution2-soft-copy](./11.4-solution2-soft-copy.md)
 - [11.5 smart-pointers](./11.5-smart-pointers.md)
+
+#### chapter12
+
+- [improve your source code]()
