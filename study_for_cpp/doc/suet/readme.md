@@ -79,3 +79,4 @@
 #### chapter12
 
 - [improve-your-source-code](./12.1-improve-your-source-code.md)
+- [12.2 derived-class](.12.2-derived-class.md)
