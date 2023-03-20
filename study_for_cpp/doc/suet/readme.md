@@ -1,10 +1,10 @@
 ## 南方科技大学 —— 于仕琪 C++ 课程
 
-[课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=52&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
+[课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=54&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
 
 ### 总共 73节
 
-- 最新进展：p52
+- 最新进展：p54
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -80,3 +80,4 @@
 
 - [improve-your-source-code](./12.1-improve-your-source-code.md)
 - [12.2 derived-class](.12.2-derived-class.md)
+- [12.3 access-control](.12.3-access-control.md)
