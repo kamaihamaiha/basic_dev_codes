@@ -84,3 +84,6 @@
 - [12.4 virtual-functions](./12.4-virtual-functions.md)
 - [12.5 inheritance-and-dynamic-memory-allocation](./12.5-inheritance-and-dynamic-memory-allocation.md)
 - [12.6 examples-in-opencv](./12.6-examples-in-opencv.md)
+
+#### chapter13
+- [13.1 class-template](./13.1-class-template.md)
