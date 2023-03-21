@@ -4,7 +4,7 @@
 
 ### 总共 73节
 
-- 最新进展：p54
+- 最新进展：p56
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -82,3 +82,4 @@
 - [12.2 derived-class](./12.2-derived-class.md)
 - [12.3 access-control](./12.3-access-control.md)
 - [12.4 virtual-functions](./12.4-virtual-functions.md)
+- [12.5 inheritance-and-dynamic-memory-allocation](./12.5-inheritance-and-dynamic-memory-allocation.md)
