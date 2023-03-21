@@ -79,5 +79,6 @@
 #### chapter12
 
 - [improve-your-source-code](./12.1-improve-your-source-code.md)
-- [12.2 derived-class](.12.2-derived-class.md)
-- [12.3 access-control](.12.3-access-control.md)
+- [12.2 derived-class](./12.2-derived-class.md)
+- [12.3 access-control](./12.3-access-control.md)
+- [12.4 virtual-functions](./12.4-virtual-functions.md)
