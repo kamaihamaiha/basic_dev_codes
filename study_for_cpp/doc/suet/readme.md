@@ -89,3 +89,4 @@
 #### chapter13
 - [13.1 class-template](./13.1-class-template.md)
 - [13.2 template-non-type-parameters](./13.2-template-non-type-parameters.md)
+- [13.3 class-template-specialization](./13.3-class-template-specialization.md)
