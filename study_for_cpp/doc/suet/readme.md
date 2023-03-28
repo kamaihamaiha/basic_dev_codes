@@ -1,11 +1,11 @@
 ## 南方科技大学 —— 于仕琪 C++ 课程
 
-- [课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=54&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
+- [课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=62&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
 - [课程代码-fork版](https://github.com/kamaihamaiha/CPP-from-ShiqiYu)
 
 ### 总共 73节
 
-- 最新进展：p61
+- 最新进展：p62
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -90,4 +90,8 @@
 - [13.1 class-template](./13.1-class-template.md)
 - [13.2 template-non-type-parameters](./13.2-template-non-type-parameters.md)
 - [13.3 class-template-specialization](./13.3-class-template-specialization.md)
-- [13.4 std classes](./13.4-std-classes.md)
+- [13.4 std-classes](./13.4-std-classes.md)
+
+#### chapter14
+
+- [14.1 standard-output-stream-and-standard-error-stream](./14.1-standard-ouput-stream-and-standard-error-stream.md)
