@@ -1,12 +1,12 @@
 ## 南方科技大学 —— 于仕琪 C++ 课程
 
-- [课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=62&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
+- [课程地址](https://www.bilibili.com/video/BV1Vf4y1P7pq?p=68&vd_source=82b7ac2fbd7ece380f983e2c23199d99)
 - [课程代码-fork版](https://github.com/kamaihamaiha/CPP-from-ShiqiYu)
 - [在线运行 CPP 的网站](https://cpp.sh/)
 
 ### 总共 73节
 
-- 最新进展：p66
+- 最新进展：p68
 
 #### chapter1
 - [1.1 the first example](./1.1-the-first-example.md)
@@ -100,3 +100,7 @@
 - [14.3 exception](./14.3-exception.md)
 - [14.4 more-about-exceptions](./14.4-more-about-exceptions.md)
 - [14.5 nothrow](./14.5-no-throw.md)
+
+#### chapter15
+
+- [15.1 friend-class](./15.1-friend-class.md)
