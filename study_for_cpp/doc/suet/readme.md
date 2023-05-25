@@ -105,3 +105,4 @@
 
 - [15.1 friend-class](./15.1-friend-class.md)
 - [15.2 nested-types](./15.2-nested-types.md)
+- [15.3 rtti-and-type-cast-operators](./15.3-rtti-and-type-cast-operators.md)
