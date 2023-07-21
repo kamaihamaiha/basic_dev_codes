@@ -11,9 +11,9 @@
 - [第 8 章: 泛型](./chapter/c8/chapter_8.md)
 - 第 9 章: 反射
 - 第 10 章: 注解
-- 第 11 章: 协程初步
-- 第 12 章: 协程进阶
-- 第 13 章: 协程应用
+- [第 11 章: 协程初步](./chapter/c_coroutine/junior/readme.md)
+- [第 12 章: 协程进阶](./chapter/c_coroutine/senior/readme.md)
+- [第 13 章: 协程应用](./chapter/c_coroutine/apply/readme.md)
 - 第 14 章: 课程总结
 - 第 15 章: Kotlin 1.4 新特性
 
