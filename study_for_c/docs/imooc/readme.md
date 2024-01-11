@@ -8,6 +8,18 @@
 [慕课网课程地址](https://coding.imooc.com/learn/list/463.html)   
 [慕课网课程电子书地址](https://www.imooc.com/wiki/C)   
 
+### 模块简介
+
+- 基础入门
+- 重点突破
+    - 难点详解
+    - 用法剖析
+- 应用进阶
+    - C标准库
+    - 构建流程
+- 综合实战
+    - GUI编程
+    - 综合案例
 
 ### 目录
 
