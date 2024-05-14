@@ -8,5 +8,6 @@
 - [Kotlin](./KotlinNote/README.md)
 - Shell
 - SQL
+- [Python](./study_for_python/readme.md)  
 - [正则表达式](./regex/readme.md)
 
