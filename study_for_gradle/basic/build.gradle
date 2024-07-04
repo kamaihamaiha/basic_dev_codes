@@ -1,0 +1,73 @@
+// 创建task 方式1
+task hello {
+    println 'task: hello 评估...'
+
+    // 任务分组和描述
+    group=BasePlugin.BUILD_GROUP
+    description='This is hello task!'
+    doLast {
+        println "hello, gradle!"
+        println "分组:${group}"
+        println "描述:${description}"
+    }
+}
+
+// 创建task 方式2
+def Task goodT=task(good)
+// 任务分组和描述
+good.group=BasePlugin.BUILD_GROUP
+good.description='good task is very good.'
+
+good.doLast {
+    println 'this is good task..'
+    println "分组:${group}"
+    println "描述:${description}"
+}
+
+
+
+// 创建task 方式3
+tasks.register("play") {
+    println "play gradle..."
+}
+
+// 创建task 方式4
+tasks.create(name: 'running') {
+    println 'running 在 Gradle解析和评估时，就会执行这个 println 语句；'
+    doLast {
+        println 'running task...'
+        println '这里只有在 task 执行时，才会执行到 doLast'
+    }
+}
+
+// 任务依赖
+task go(dependsOn: hello) {
+    doLast {
+        println 'this is task go...'
+    }
+}
+
+//动态定义任务; 执行方式: gradle -q task_0
+3.times { num ->
+    task "task_$num" {
+        println "动态定义的 task_$num 评估阶段"
+        doLast {
+            println "动态定义的 task_$num"
+        }
+    }
+}
+
+// 驼峰命名任务，调用时可以缩写: gradle hW
+task HelloWorld {
+    doLast {
+        println('HelloWorld task')
+    }
+}
+
+// 调用时可以缩写: gradle gF
+task goFirst {
+    doLast {
+        println('goFirst task')
+    }
+
+}

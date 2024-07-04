@@ -1,6 +1,6 @@
 ## Gradle
 
-- [基础知识](./basic.md)
+- [基础知识](basic/readme)
 - [Groovy 语法](./groovy_syntax.md)
 - [Gradle Wrapper](./gradle_wrapper.md)
 - [Gradle 插件](./gradle_plugin.md)
