@@ -1,0 +1,190 @@
+
+// 定义任务
+task hello {
+    add(1, 2)
+    // 调用方法时, 括号也可以省略
+    minus 3,1
+}
+
+
+// 定义方法
+def add(int a, int b) {
+    println a+b
+}
+
+// 定义方法，参数类型也可以省略
+def minus(a, b) {
+    println a-b
+}
+
+// 也可以这么定义; 指定返回值类型，则不需要 def 关键字了
+int square(a) {
+    return a*a
+}
+
+// return 可以省略，最后一句的结果就是返回值
+int increase(a) {
+    a+1
+}
+
+
+task helloPerson {
+    doLast {
+        def p = new Person()
+        p.increaseAge()
+        println p.age
+    }
+
+}
+
+// 定义类
+
+class Person {
+    String name
+    Integer age = 18
+
+    def increaseAge(){
+        this.age += 1
+    }
+}
+
+// 断言
+task test {
+    assert 1+1 == 2
+}
+
+// switch 语句
+task testSwitch {
+
+    doLast {
+        def x = 10
+        def ret = ""
+
+        switch (x) {
+            case "ok":
+                ret = "found ok"
+                break
+            case [1, 2, 3, 'list']:
+                ret = "found list"
+                break
+            case 10..19:
+                ret = "range"
+                break
+            case Integer:
+                ret = "integer"
+                break
+            default:
+                ret = "default"
+        }
+
+        println ret
+    }
+
+}
+
+// 字符串:
+ task testString {
+    doLast {
+        def name = 'Bob'
+        println "hello ${name}"
+        println "hi $name"
+
+        // 三引号
+        def des = '''first line
+            second line
+        end line'''
+
+        println "$des"
+        println name
+        println des
+    }
+ }
+
+ // GString
+ task testGString {
+
+    doLast {
+        // 应该是 True
+        assert "one: ${1}".hashCode() != "one: 1".hashCode()
+    }
+ }
+
+ // List
+ task testList {
+    doLast {
+        def nums = [1, 2, 3]
+        assert nums instanceof List
+        assert nums[1] == 2
+        // 倒数第一个元素
+        assert nums[-1] == 3
+        println "最后一个元素${nums[-1]}"
+
+        // 在末尾追加元素
+        nums << 4
+        println "最后一个元素${nums[-1]}"
+
+        def linkedListNums = [1, 2, 3, 4] as LinkedList
+        assert linkedListNums instanceof java.util.LinkedList
+    }
+ }
+
+ // Map
+ task testMap {
+
+    doLast {
+        def students = [one: '1个', two: '2个', three: '3个']
+        // 获取 value; 两种方式
+        println students['one']
+        println students.two
+
+        def key = 'name'
+        def person = [key: "特朗普"] // 注意，这个person的元素中，键是字符串 key，而不是变量 key 对应的 'name'
+        println person.key
+
+        person = [(key): "拜登"] // 要使用变量key作为键，用()包起来
+        println person.name
+    }
+ }
+
+ // 定义闭包；注意要在调用前定义
+  def kkClosure = {
+     println it
+  }
+
+  // 调用闭包
+ task testClosure {
+    doLast {
+        kkClosure('hello')
+        kkClosure.call('hello-call')
+        kkClosure 'hello...'
+    }
+ }
+
+ // io操作
+task testIO {
+    doLast {
+        def filePath = "name.txt"
+        def file = new File(filePath)
+        file.eachLine {
+            println it
+        }
+
+        // 写入内容
+        file.withPrintWriter {
+            // 会覆盖
+            it.println('yyds')
+        }
+    }
+}
+
+// asType
+task testAsType {
+    doLast {
+        String numStr = '123'
+        def num = numStr.asType(Integer)
+        assert num instanceof java.lang.Integer
+        println num
+    }
+}
+
+

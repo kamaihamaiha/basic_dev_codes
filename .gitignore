@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/study_for_gradle/groovy/demo/.gradle/
+/study_for_gradle/basic/.gradle/
