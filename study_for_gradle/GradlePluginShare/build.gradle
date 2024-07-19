@@ -1,0 +1,56 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'  // 使用 maven-publish 插件
+}
+
+group 'cn.kk.plugins'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    implementation 'org.apache.groovy:groovy:4.0.14'
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // 这两个，为了可以在 External Libraries 生成3个Jar: 为了给非 buildSrc 项目使用 groovy 语法和gradleAPI
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+
+
+/*test {
+    useJUnitPlatform()
+}*/
+
+// 上传插件配置（过时的语法）
+/*apply plugin: 'maven'
+group = 'cn.kk.plugins'
+version = '0.9.9'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}*/
+
+// 上传插件配置
+group = 'cn.kk.plugins'
+version = '0.9.9'
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = uri('../repo')
+        }
+    }
+}

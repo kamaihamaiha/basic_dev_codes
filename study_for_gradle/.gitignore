@@ -1,0 +1,14 @@
+.idea
+repo
+g_plugin/.gradle
+g_wrapper/.gradle
+GradlePlugin/.idea
+GradlePlugin/lib
+GradlePlugin/.gradle
+GradlePlugin/buildSrc/.gradle
+GradlePlugin/buildSrc/build
+GradlePluginShare/.gradle
+GradlePluginShare/.idea
+GradlePluginShare/build
+UsePluginDemo/.idea
+UsePluginDemo/.gradle

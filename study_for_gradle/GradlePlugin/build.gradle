@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: CustomPlugin
+apply plugin: CustomPluginV2
+apply plugin: HumanPlugin
+
+group 'org.example.plugins'
+version '1.0-SNAPSHOT'
+
+CustomHuman.msg = "自定义的HumanPlugin扩展"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// 自定义插件
+class CustomPlugin implements Plugin<Project> {
+    @Override
+    void apply(Project project) {
+
+        project.task('CustomPluginTask') {
+
+            doLast {
+                println "自定义插件"
+            }
+        }
+    }
+}
+
+// 自定义插件扩展
+class MalePluginExtension {
+    String msg = "from Male Plugin Extension"
+}
+
+class HumanPlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project project) {
+        // 使用自定义插件扩展
+        def extension = project.extensions.create('CustomHuman', MalePluginExtension)
+        project.task("HumanPluginTask") {
+            doLast {
+                println extension.msg
+            }
+        }
+    }
+}

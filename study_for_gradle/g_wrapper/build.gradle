@@ -1,0 +1,13 @@
+task test {
+    doLast {
+        println "hello gradle!"
+    }
+}
+
+// 自定义 Gradle wrapper
+/*
+task wrapper(type: Wrapper) {
+    gradleVersion = '7.2'
+    distributionUrl = './gradle-7.2-bin.zip'
+    // 其他属性也可以自定义
+} */

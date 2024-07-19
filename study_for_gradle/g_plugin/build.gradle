@@ -1,0 +1,36 @@
+// 应用插件
+apply from: 'other.gradle'
+
+
+task echoOther {
+    doLast {
+        println "Version: ${verson}, name: ${name_}"
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+// 自定义插件
+
+apply plugin:CustomPlugin
+class CustomPlugin implements Plugin<Project> {
+    @Override
+    void apply(Project project) {
+        project.task('CustomPluginTask') {
+            doLast  {
+                println "自定义插件"
+            }
+        }
+    }
+}
+
