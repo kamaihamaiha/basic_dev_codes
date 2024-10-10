@@ -14,6 +14,7 @@ int main()
 	// 字符数组 2种初始化方式: 初始化列表和字面值常量。 注意 = 左边的 [] 内的数字 10 也可以不写
 	char str1[10] = { 'H', 'e', 'l', 'l', 'o'};
 
+    printf("count of str1: %d\n", sizeof(str1) / sizeof(char));
 	char str2[6] = "Hello";
 
 	// 打印字符数组，也有 2种方式
@@ -37,16 +38,31 @@ int main()
 
 	// 4.从键盘输入字符串到字符数组
 	char str3[20];
-	//scanf("%s", str3);
+	scanf("%s", str3);
 
-	//printf(str3);
+	printf(str3);
+	printf("\n");
 
 	// 5. getchar & putchar
-	printf("请输入字符：\n");
+	/*printf("请输入字符：\n");
 	char c;
 	c = getchar();
 	c = c - 32; // 转换成大写字母
-	putchar(c);
+	putchar(c);*/
+
+    // 练习：输出26个字母
+    char alpha[27];
+    char start_c = 'A';
+    for (int i = 0; i < 26; ++i) {
+        alpha[i] = char(start_c + i);
+    }
+
+    // 输入字母表
+    int len = strlen(alpha);
+    for (int i = 0; i < len; ++i) {
+        if(i > 0 && i % 5 == 0) printf("\n");
+        putchar(alpha[i]);
+    }
 	
 	return 0;
 }
