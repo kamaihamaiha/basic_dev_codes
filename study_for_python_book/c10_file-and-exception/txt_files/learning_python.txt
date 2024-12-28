@@ -1,0 +1,6 @@
+In Python you can compute math number
+In Python you can accept terminal input
+In Python you can print info to terminal
+In Python you can create class
+In Python you can read file
+In Python you can do other more things
