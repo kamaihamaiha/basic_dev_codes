@@ -21,10 +21,7 @@ def check_key_down_event(settings, screen, event, ship, bullets):
 	if event.key == pygame.K_LEFT:
 		ship.moving_left = True	
 	if event.key == pygame.K_SPACE:
-		# 限制子弹数量
-		if len(bullets) < settings.bullet_allowed:
-			new_bullet = Bullet(settings, screen, ship)
-			bullets.add(new_bullet)	
+		fire_bullet(settings, screen, ship, bullets)
 					
 def check_key_up_event(event, ship):
 	if event.key == pygame.K_RIGHT:
@@ -45,4 +42,22 @@ def update_screen(screen, settings, ship, bullets):
 	ship.blitme()			
 
 	# 让最近绘制的屏幕可见
-	pygame.display.flip()				
+	pygame.display.flip()	
+
+
+def update_bullets(bullets):
+	bullets.update()
+	# 删除已经消失的子弹; 使用 copy() 可以在循环中修改
+	for bullet in bullets.copy():
+		if bullet.rect.bottom <= 0:
+			bullets.remove(bullet)
+
+	print(len(bullets))		
+
+
+def fire_bullet(settings, screen, ship, bullets):
+	# 限制子弹数量		
+	if len(bullets) < settings.bullet_allowed:
+		new_bullet = Bullet(settings, screen, ship)
+		bullets.add(new_bullet)	
+

@@ -25,13 +25,7 @@ def run_game():
 		# 监视键盘和鼠标事件
 		gf.check_events(ailen_settings, screen, ship, bullets)
 		ship.update()
-		bullets.update()
-		# 删除已经消失的子弹; 使用 copy() 可以在循环中修改
-		for bullet in bullets.copy():
-			if bullet.rect.bottom <= 0:
-				bullets.remove(bullet)
-
-		print(len(bullets))		
+		gf.update_bullets(bullets)	
 
 		# 更新屏幕
 		gf.update_screen(screen, ailen_settings, ship, bullets)
