@@ -9,7 +9,7 @@ def run_game():
 	pygame.init()
 	ailen_settings = Settings()
 	screen = pygame.display.set_mode(ailen_settings.screen_size)
-	pygame.display.set_caption("Alien Invasion")
+	pygame.display.set_caption(ailen_settings.window_caption)
 
 	# 创建一个飞船
 	ship = Ship(screen, ailen_settings)
