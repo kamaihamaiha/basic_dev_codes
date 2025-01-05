@@ -7,6 +7,11 @@ def show_window():
 	size = (1000, 700)
 	screen = pygame.display.set_mode(size)
 	pygame.display.set_caption("this is a blue window")
+	# 角色头像
+	avatar = pygame.image.load('debug.jpg')
+	avatar_rect = avatar.get_rect()
+	avatar_rect.centerx = screen.get_rect().centerx
+	avatar_rect.centery = screen.get_rect().centery
 
 	while True:
 		for event in pygame.event.get():
@@ -14,6 +19,7 @@ def show_window():
 				sys.exit()
 
 		screen.fill(bg_color)
+		screen.blit(avatar, avatar_rect)
 		pygame.display.flip()
 
 
