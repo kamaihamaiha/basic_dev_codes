@@ -21,8 +21,10 @@ def check_key_down_event(settings, screen, event, ship, bullets):
 	if event.key == pygame.K_LEFT:
 		ship.moving_left = True	
 	if event.key == pygame.K_SPACE:
-		new_bullet = Bullet(settings, screen, ship)
-		bullets.add(new_bullet)	
+		# 限制子弹数量
+		if len(bullets) < settings.bullet_allowed:
+			new_bullet = Bullet(settings, screen, ship)
+			bullets.add(new_bullet)	
 					
 def check_key_up_event(event, ship):
 	if event.key == pygame.K_RIGHT:
