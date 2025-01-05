@@ -22,14 +22,6 @@ def run_game():
 
 		# 更新屏幕
 		gf.update_screen(screen, ailen_settings, ship)
-		# 绘制背景
-		#screen.fill(ailen_settings.bg_color)	
-
-		# 绘制飞船
-		#ship.blitme()			
-
-		# 让最近绘制的屏幕可见
-		#pygame.display.flip()
 
 
 run_game()						
