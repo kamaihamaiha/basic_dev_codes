@@ -2,11 +2,13 @@ import sys
 
 import pygame
 
+from settings import Settings
+
 def run_game():
 	"""初始化游戏，并创建一个屏幕对象"""
 	pygame.init()
-	size = (1200, 800)
-	screen = pygame.display.set_mode(size)
+	ailen_settings = Settings()
+	screen = pygame.display.set_mode(ailen_settings.screen_size)
 	pygame.display.set_caption("Alien Invasion")
 
 
@@ -16,6 +18,9 @@ def run_game():
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				sys.exit()
+
+		# 绘制背景
+		screen.fill(ailen_settings.bg_color)				
 
 		# 让最近绘制的屏幕可见
 		pygame.display.flip()
