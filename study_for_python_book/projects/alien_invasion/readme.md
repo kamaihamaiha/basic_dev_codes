@@ -21,3 +21,23 @@
 	- import pygame	
 - 退出虚拟环境: ``deactivate``	
 
+### 配置 sublime Text 构建系统，以便使用虚拟环境的 python
+
+- Tools > Build System > New Build System
+- 在新打开的文件中输入以下内容：
+	```
+	{
+		"cmd": ["/Users/kk/myenv/bin/python3", "-u", "$file"],
+	    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	    "selector": "source.python",
+	    "env": {
+	        "PYTHONPATH": "/Users/kk/myenv/lib/python3.10/site-packages"
+	    }
+	}
+	```
+	- cmd：指定虚拟环境的 Python 路径
+	- PYTHONPATH：确保 Sublime 知道虚拟环境的包路径
+- 保存文件为 venv_python.sublime-build
+	- 默认存储路径： ``~/Library/Application Support/Sublime Text 3/Packages/User``
+
+
