@@ -15,6 +15,8 @@ def check_events(settings, screen, ship, bullets):
 				check_key_up_event(event, ship)
 
 def check_key_down_event(settings, screen, event, ship, bullets):
+	if event.key == pygame.K_q:
+		sys.exit()
 	if event.key == pygame.K_RIGHT:
 		# 只修改飞船的moving_right标记
 		ship.moving_right = True
@@ -30,7 +32,7 @@ def check_key_up_event(event, ship):
 	if event.key == pygame.K_LEFT:
 		ship.moving_left = False		
 
-def update_screen(screen, settings, ship, bullets):
+def update_screen(screen, settings, ship, bullets, alien):
 	# 绘制背景
 	screen.fill(settings.bg_color)
 
@@ -39,7 +41,10 @@ def update_screen(screen, settings, ship, bullets):
 		bullet.draw_bullet()	
 
 	# 绘制飞船
-	ship.blitme()			
+	ship.blitme()	
+
+	# 绘制外星人
+	alien.blitme()		
 
 	# 让最近绘制的屏幕可见
 	pygame.display.flip()	
