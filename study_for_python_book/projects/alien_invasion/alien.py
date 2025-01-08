@@ -1,10 +1,11 @@
 import pygame
 from pygame.sprite import Sprite
 
-class Alien():
+class Alien(Sprite):
 	"""管理外星人的类"""
 
 	def __init__(self, ai_settings, screen):
+		super().__init__()
 		self.ai_settings = ai_settings
 		self.screen = screen
 
