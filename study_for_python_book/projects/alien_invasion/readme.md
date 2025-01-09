@@ -11,6 +11,8 @@
 	- python3 -m venv myenv
 	- source ~/myenv/bin/activate
 	- python3 -m pip install pygame --trusted-host mirrors.aliyun.com
+- 在 Apple m系列电脑安装说明	
+
 
 #### 查看pygame 安装情况
 
@@ -40,4 +42,9 @@
 - 保存文件为 venv_python.sublime-build
 	- 默认存储路径： ``~/Library/Application Support/Sublime Text 3/Packages/User``
 
+#### Apple M处理器设备上 安装 pygame
+
+- 先安装 pygame 依赖库: ``arch -arm64 brew install hg sdl sdl_image sdl_ttf``
+- 安装 arm64 架构的 pygame: ``arch -arm64 python3 -m pip install pygame --force-reinstall --no-cache-dir``
+	- 前面已经安装了 x86 的pygame, 所以加了 --force-reinstall 参数
 
