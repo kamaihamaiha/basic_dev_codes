@@ -17,3 +17,4 @@ class Settings():
 		self.alien_margin = 30
 		# 外星人之间距离
 		self.alien_interval = 50
+		self.alien_margin_top = 30

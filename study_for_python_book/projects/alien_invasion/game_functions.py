@@ -69,23 +69,31 @@ def fire_bullet(settings, screen, ship, bullets):
 		bullets.add(new_bullet)	
 
 
-def create_fleet(settings, screen, aliens):
+def create_fleet(settings, screen, aliens, ship):
 	# 创建一群外星人
 	alien = Alien(settings, screen)
 	alien_count = get_number_aliens_x(settings, alien.rect.width)
-	for alien_index in range(alien_count):
-		create_alien(aliens, settings, screen, alien_index)
+	alien_rows = get_aliens_rows(settings, screen, ship, alien)
+	for row in range(alien_rows):
+		for alien_index in range(alien_count):
+			create_alien(aliens, settings, screen, alien_index, row)
 
 def get_number_aliens_x(settings, alien_width):
 	content_width = settings.screen_size[0] - settings.alien_margin * 2
 	number_aliens_x = int(content_width / (alien_width + settings.alien_margin))
 	return number_aliens_x
 
-def create_alien(aliens, settings, screen, index):
+def create_alien(aliens, settings, screen, column, row):
 	alien = Alien(settings, screen)
-	alien.x = settings.alien_margin + index * (alien.rect.width + settings.alien_interval)
+	alien.x = settings.alien_margin + column * (alien.rect.width + settings.alien_interval)
 	alien.rect.x = alien.x
+	alien.rect.y += (2 * alien.rect.height * row)
 	aliens.add(alien)	
+
+def get_aliens_rows(settings, screen, ship, alien):
+	available_space_y = settings.screen_size[1] - (3 * ship.rect.height) - settings.alien_margin_top
+	rows = int(available_space_y / (2 * alien.rect.height))
+	return rows	
 
 
 
