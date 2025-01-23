@@ -72,13 +72,21 @@ def fire_bullet(settings, screen, ship, bullets):
 def create_fleet(settings, screen, aliens):
 	# 创建一群外星人
 	alien = Alien(settings, screen)
-	available_width = settings.screen_size[0] - settings.alien_margin * 2
-	alien_count = int(available_width / (alien.rect.width + settings.alien_margin))
+	alien_count = get_number_aliens_x(settings, alien.rect.width)
 	for alien_index in range(alien_count):
-		alien = Alien(settings, screen)
-		alien.x = settings.alien_margin + alien_index * (alien.rect.width + settings.alien_interval)
-		alien.rect.x = alien.x
-		aliens.add(alien)
+		create_alien(aliens, settings, screen, alien_index)
+
+def get_number_aliens_x(settings, alien_width):
+	content_width = settings.screen_size[0] - settings.alien_margin * 2
+	number_aliens_x = int(content_width / (alien_width + settings.alien_margin))
+	return number_aliens_x
+
+def create_alien(aliens, settings, screen, index):
+	alien = Alien(settings, screen)
+	alien.x = settings.alien_margin + index * (alien.rect.width + settings.alien_interval)
+	alien.rect.x = alien.x
+	aliens.add(alien)	
+
 
 
 
