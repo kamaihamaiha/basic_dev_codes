@@ -13,7 +13,8 @@ def draw_scatter_char_single_point(plt):
 def draw_scatter_char_multi_point(plt):
     x_values=[1, 2, 3, 4, 5]
     y_values= [1, 4, 9 , 16, 25]
-    plt.scatter(x_values, y_values, s=200)
+    # edgecolor 可以指定点的轮廓颜色
+    plt.scatter(x_values, y_values,edgecolor='red', s=50)
     plt.title('scatter chart')
     plt.xlabel('x value...', fontsize=16)
     plt.ylabel('y value...', fontsize=18)
@@ -36,5 +37,5 @@ def draw_scatter_char_multi_point_auto(plt):
 
 
 # draw_scatter_char_single_point(plt) 
-# draw_scatter_char_multi_point(plt)  
-draw_scatter_char_multi_point_auto(plt) 
+draw_scatter_char_multi_point(plt)  
+# draw_scatter_char_multi_point_auto(plt) 
