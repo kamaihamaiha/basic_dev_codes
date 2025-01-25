@@ -42,6 +42,8 @@ def draw_scatter_char_multi_point_auto(plt, use_cmap):
     # 设置坐标轴的取值范围
     plt.axis([0,1100,0,1100000])
     plt.show()
+    # 保存图到图片中
+    # plt.savefig("my_scatter.jpg", bbox_inches='tight')
 
 
 # draw_scatter_char_single_point(plt) 
