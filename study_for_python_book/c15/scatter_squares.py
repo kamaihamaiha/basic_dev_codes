@@ -23,10 +23,17 @@ def draw_scatter_char_multi_point(plt):
     plt.show()
 
 # 自动绘制批量的点
-def draw_scatter_char_multi_point_auto(plt):
+"""
+自定绘制批量的点
+use_cmap: 是否用颜色映射
+"""
+def draw_scatter_char_multi_point_auto(plt, use_cmap):
     x_values = list(range(1, 1001))
     y_values = [x**2 for x in x_values]
-    plt.scatter(x_values, y_values, s=6)
+    if use_cmap:
+        plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, edgecolor='none', s=8)
+    else:
+        plt.scatter(x_values, y_values, s=6)
     plt.title('scatter chart')
     plt.xlabel('x value...', fontsize=16)
     plt.ylabel('y value...', fontsize=18)
@@ -38,5 +45,5 @@ def draw_scatter_char_multi_point_auto(plt):
 
 
 # draw_scatter_char_single_point(plt) 
-draw_scatter_char_multi_point(plt)  
-# draw_scatter_char_multi_point_auto(plt) 
+# draw_scatter_char_multi_point(plt)  
+draw_scatter_char_multi_point_auto(plt, True) 
