@@ -5,6 +5,9 @@ from random_walk import RandomWalk
 def start_walk():
     rw = RandomWalk()
     rw.fill_point()
+
+    # 设置绘图窗口尺寸；inch
+    plt.figure(dpi=128, figsize=(10, 6))
     # 随机数，用来映射随机颜色
     point_numbers = list(range(rw.num_points))
     plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolor='none', s=1)
