@@ -2,7 +2,7 @@ from random import choice
 
 class RandomWalk():
     """随机漫步，记录漫步次数和轨迹"""
-    def __init__(self, num_points=5000):
+    def __init__(self, num_points=50000):
         self.num_points = num_points
         # 初始点都为0
         self.x_values=[0]
