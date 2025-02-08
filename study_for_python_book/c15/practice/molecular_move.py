@@ -7,7 +7,6 @@ def start_move():
     mw.fill_point()
 
     plt.figure(dpi=128, figsize=(10, 6))
-    point_colors = list(range(mw.x_values))
 
     plt.plot(mw.x_values, mw.y_values, linewidth=1)
     cur_axis = plt.gca()
