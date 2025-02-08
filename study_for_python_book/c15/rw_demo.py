@@ -12,6 +12,11 @@ def start_walk():
     # 单独绘制起点和终点
     plt.scatter(rw.x_values[0], rw.y_values[0], c='green', edgecolors='none', s=22)
     plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=22)
+    
+    # 隐藏坐标轴
+    cur_axes = plt.gca()
+    cur_axes.get_xaxis().set_visible(False)
+    cur_axes.get_yaxis().set_visible(False)
     plt.show()
 
 # start_walk() 
