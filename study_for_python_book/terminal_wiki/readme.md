@@ -21,5 +21,21 @@
 	- source ~/myenv/bin/activate
 	- python3 -m pip install pygal==1.7 --trusted-host mirrors.aliyun.com
 - 安装 arm64架构的
- - ``arch -arm64 python3 -m pip install pygal==1.7``
+   - ``arch -arm64 python3 -m pip install pygal==1.7``
+- 查看 pygal 安装情况
+   - ``pip show pygal``
+
+#### pygal + python 3.10+ 报错处理
+
+- pygal 代码中使用了 from collections import Iterable，但 Iterable 在 Python 3.10 及以上版本中已经被移到了 collections.abc 模块，导致 ImportError
+
+解决:
+1. 修改 pygal 代码，使其兼容 Python 3.10+：
+    - pygal/_compat.py 文件
+    - ``from collections import Iterable`` 修改为: ``from collections.abc import Iterable``
+
+2. 且升级 pygal: ``python3 -m pip install --upgrade pygal --trusted-host mirrors.aliyun.com``
+
+
+
 
