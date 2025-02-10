@@ -6,6 +6,13 @@
 运行python代码，要指定用 arm64
 ``arch -arm64 python3 rw_demo.py ``
 
+
+### 安装 matplotlib
+
+``python3 -m pip install matplotlib --trusted-host mirrors.aliyun.com``
+
+### 安装 Pygal
+
 #### 安装 pygal
 
 ``arch -arm64 python3 -m pip install pygal==1.7``
