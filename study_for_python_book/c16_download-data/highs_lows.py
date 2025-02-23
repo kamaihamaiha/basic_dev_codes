@@ -25,6 +25,8 @@ with open(filename) as f:
     fig = plt.figure(dpi=128, figsize=(10, 6))
     plt.plot(dates, highs, c='red')      
     plt.plot(dates, lows, c='blue')      
+    # 填充两个温度之间的颜色
+    plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.2)
     # 设置图形的格式
     plt.title("Daily high temperatures, July 2014", fontsize=24)
     plt.xlabel('', fontsize=16)
