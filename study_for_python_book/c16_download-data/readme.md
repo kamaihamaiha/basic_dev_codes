@@ -10,3 +10,8 @@
 ```
 - 这个项目使用过的天气数据从 http://www.wunderground.com/history 下载
 
+### csv文件转换 列为行
+
+- 用到 pandas 库
+- 安装: `python3 -m pip install pandas --trusted-host mirrors.aliyun.com`
+- 注意，如果是在虚拟环境运行代码，则需要在 terminal 先激活虚拟环境: `source /Users/kk/myenv/bin/activate`
