@@ -15,3 +15,8 @@
 - 用到 pandas 库
 - 安装: `python3 -m pip install pandas --trusted-host mirrors.aliyun.com`
 - 注意，如果是在虚拟环境运行代码，则需要在 terminal 先激活虚拟环境: `source /Users/kk/myenv/bin/activate`
+
+### JSON格式
+
+- 制作交易收盘价走势图
+- 先用代码下载数据: btc_close_2017.py
