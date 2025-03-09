@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import os
 from populations import Populations
+from moviepy import VideoFileClip, AudioFileClip, concatenate_videoclips, CompositeVideoClip
 
 # change work dir
 os.chdir("practice")
@@ -13,7 +14,7 @@ pops = Populations('cn_pop_last74_format.csv')
 years = pops.years
 population = pops.totals
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10, 6))
 year_display_start = years[0]
 year_display_end = years[-1] + 6 # 8 is added to make the plot look better
 ax.set_xlim(year_display_start, year_display_end) 
@@ -36,11 +37,45 @@ def animate(i):
     x = years[:i+1]
     y = population[:i+1]
     line.set_data(x, y)
-    annotation.set_text(f'Year: {years[i]}\nPopulation: {population[i]}\n Excludes HK, Macau, Taiwan\nSource: National Bureau of Statistics of China')
+    annotation.set_text(f'Year: {years[i]}\nPopulation: {population[i]}\nExcludes HK, Macau, Taiwan\nSource: National Bureau of Statistics of China')
 
     
     return line, annotation
 
-ani = animation.FuncAnimation(fig, animate, frames=len(years), init_func=init, blit=True, interval=100)
 
+ani = animation.FuncAnimation(fig, animate, frames=len(years), init_func=init, blit=True, interval=200)
 plt.show()
+
+# # save the animation
+# ani.save('cn_pop_anim.mp4', writer='ffmpeg')
+
+# video = VideoFileClip("cn_pop_anim.mp4")
+# # 获取最后一帧
+# last_frame = video.to_ImageClip(video.duration - 0.01)
+
+# # 创建停留的静态帧
+# pause_duration = 2  # 停留时间（秒）
+# pause_clip = last_frame.with_duration(pause_duration)
+
+# # 合并视频和静态帧
+# final_clip = concatenate_videoclips([video, pause_clip])
+# # final_clip = CompositeVideoClip([video, pause_clip.set_start(video.duration)])
+
+
+# # 保存最终视频
+# final_clip.write_videofile("animation_with_pause.mp4", codec='libx264')
+
+# # 合并视频和音频
+# video = VideoFileClip("animation_with_pause.mp4")
+# audio = AudioFileClip("sunrise_aigei_com.mp3")
+
+# # 确保音频长度与视频一致
+# audio = audio.subclipped(0, video.duration)
+
+# # 将音频与视频合并
+# video = video.with_audio(audio)
+
+# # 保存合并后的视频
+# video.write_videofile("animation_with_music.mp4", codec='libx264')
+
+# plt.show()
