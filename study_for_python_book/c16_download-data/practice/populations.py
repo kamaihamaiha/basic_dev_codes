@@ -16,8 +16,8 @@ class Populations():
             next(reader)
 
             year_column_index = 0
-            country_column_index = 1
-            citizen_column_index = 2
+            citizen_column_index = 1
+            country_column_index = 2
             total_column_index = 3
             for row in reader:
                 year = datetime.strptime(row[year_column_index][:-1], '%Y').year # [:-1]去掉最后一个汉字
