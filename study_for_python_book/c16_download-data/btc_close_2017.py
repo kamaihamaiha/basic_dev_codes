@@ -28,6 +28,22 @@ def download_json_file_v2(json_url, file_name):
         f.write(req.text)
     return req.json()        
   
+# 下载之后就不用再调用了
+# download_json = download_json_file_v2(json_url, file_name)
+# print(download_json)    
 
-download_json = download_json_file_v2(json_url, file_name)
-print(download_json)    
+# 提取数据
+with open(file_name) as f:
+    btc_data = json.load(f)
+
+# print data
+for btc_dict in btc_data:
+    date = btc_dict['date']
+    month = int(btc_dict['month'])    
+    week = int(btc_dict['week'])    
+    weekday = btc_dict['weekday']    
+    close = int(float(btc_dict['close']))    
+    print("{} is month {} week {},{}, the close price is {} RMB".format(date, month, week, weekday, close))
+
+#     
+
