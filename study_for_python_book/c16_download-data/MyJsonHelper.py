@@ -5,6 +5,7 @@ import ssl
 import requests
 from urllib.request import urlopen
 import pygal
+import math
 
 class MyJsonHelper():
     """downlaod & parse json data"""
@@ -58,11 +59,13 @@ class MyJsonHelper():
             self.weekdays.append(bean['weekday'])
             self.close.append(int(float(bean['close'])))
 
-    def draw_line_chart(self):
+    def draw_line_chart(self, convert_log = False):
         line_chart = pygal.Line(x_label_rotation=20, show_minor_x_labels=False)
         line_chart.title = '收盘价(¥)'
         line_chart.x_labels = self.dates
         N = 20 # x轴坐标每隔20天显示一次
         line_chart.x_labels_major = self.dates[::N]
-        line_chart.add('收盘价', self.close) 
+        cur_close = [math.log10(_) for _ in self.close] if convert_log  else self.close
+        title = "收盘价对数变化" if convert_log else '收盘价'
+        line_chart.add(title, cur_close) 
         line_chart.render_to_file('docs/close_line_chart.svg')

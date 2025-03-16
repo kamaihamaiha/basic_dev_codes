@@ -12,7 +12,7 @@ json_helper = MyJsonHelper(json_file_download_url, file_name)
 json_helper.fill_to_format_data()
 
 # step3 draw
-json_helper.draw_line_chart()
+json_helper.draw_line_chart(True)
 print('finish!')
 
 
