@@ -20,7 +20,14 @@ json_helper.fill_to_format_data()
 # 周日均图
 idx_week = json_helper.dates.index('2017-12-11')
 # 第一天是周日，是2016年最后一周，因此去掉,从 index 1 开始截取
-json_helper.draw_line(json_helper.week[1:idx_week], json_helper.close[1:idx_week], '收盘价周日均图(¥)', '周日均值')
+# json_helper.draw_line(json_helper.week[1:idx_week], json_helper.close[1:idx_week], '收盘价周日均图(¥)', '周日均值')
+
+# 每周各天的均值
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+weekdays_int = [weekdays.index(w) + 1 for w in json_helper.weekdays[1:idx_week]]
+
+json_helper.draw_line(weekdays_int, json_helper.close[1:idx_week], '收盘价星期均值(¥)', '星期日均值')
+
 print('finish!')
 
 
