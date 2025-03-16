@@ -20,3 +20,4 @@
 
 - 制作交易收盘价走势图
 - 先用代码下载数据: btc_close_2017.py
+- 用 Pygal 绘制折线图(line chart)
