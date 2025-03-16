@@ -6,6 +6,7 @@ import requests
 from urllib.request import urlopen
 import pygal
 import math
+from itertools import groupby
 
 class MyJsonHelper():
     """downlaod & parse json data"""
@@ -69,3 +70,17 @@ class MyJsonHelper():
         title = "收盘价对数变化" if convert_log else '收盘价'
         line_chart.add(title, cur_close) 
         line_chart.render_to_file('docs/close_line_chart.svg')
+
+    def draw_line(self, x_data, y_data, title, y_legend):
+        xy_map = []
+        for x, y in groupby(sorted(zip(x_data, y_data)), key=lambda _:_[0]):
+            y_list= [v for _,v in y]    
+            xy_map.append([x, sum(y_list) / len(y_list)])
+
+        x_group,y_mean = [*zip(*xy_map)]
+        line_chart = pygal.Line()
+        line_chart.title = title
+        line_chart.x_labels = x_group
+        line_chart.add(y_legend, y_mean)
+        line_chart.render_to_file('docs/' + title +'.svg')
+        return line_chart                

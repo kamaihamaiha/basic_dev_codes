@@ -12,7 +12,10 @@ json_helper = MyJsonHelper(json_file_download_url, file_name)
 json_helper.fill_to_format_data()
 
 # step3 draw
-json_helper.draw_line_chart(True)
+# json_helper.draw_line_chart(True)
+# 取1-11月数据，因为12月数据不完整
+idx_month = json_helper.dates.index('2017-12-01')
+json_helper.draw_line(json_helper.months[:idx_month], json_helper.close[:idx_month], '收盘价月日均值(¥)', '月日均值')
 print('finish!')
 
 
