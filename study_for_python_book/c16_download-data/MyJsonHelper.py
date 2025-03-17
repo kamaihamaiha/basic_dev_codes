@@ -69,7 +69,9 @@ class MyJsonHelper():
         cur_close = [math.log10(_) for _ in self.close] if convert_log  else self.close
         title = "收盘价对数变化" if convert_log else '收盘价'
         line_chart.add(title, cur_close) 
-        line_chart.render_to_file('docs/close_line_chart.svg')
+        file_path = 'docs/close_line_chart_log.svg' if convert_log else 'docs/close_line_chart.svg'
+        line_chart.render_to_file(file_path)
+        return file_path
 
     def draw_line(self, x_data, y_data, title, y_legend):
         xy_map = []
@@ -82,5 +84,6 @@ class MyJsonHelper():
         line_chart.title = title
         line_chart.x_labels = x_group
         line_chart.add(y_legend, y_mean)
-        line_chart.render_to_file('docs/' + title +'.svg')
-        return line_chart                
+        chart_file_path = 'docs/' + title +'.svg' 
+        line_chart.render_to_file(chart_file_path)
+        return chart_file_path                
