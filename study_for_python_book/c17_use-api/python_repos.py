@@ -40,11 +40,15 @@ def show_repo_info(repo):
     print('repo updated_at: ', repo['updated_at'])    
     print('repo description: ', repo['description'])
 
-names, stars = [], []
+names, plot_dicts = [], []
 for repo in items:
     # show_repo_info(repo)
     names.append(repo['name'])
-    stars.append(repo['stargazers_count'])
+    plot_dict = {
+        'value': repo['stargazers_count'],
+        'label': repo['description']
+    }
+    plot_dicts.append(plot_dict)
     # print('\n')   
 
 # 可视化
@@ -65,5 +69,5 @@ my_style= LS('#333366', base_style=LCS)
 chart = pygal.Bar(get_config(), style=my_style, x_label_rotation=45, show_legend=False)
 chart.title = 'Most-Starred Python Projects on Github'
 chart.x_labels = names
-chart.add('', stars)    
+chart.add('', plot_dicts)    
 chart.render_to_file('python_repos.svg')
