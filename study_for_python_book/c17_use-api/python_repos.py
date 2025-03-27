@@ -46,7 +46,8 @@ for repo in items:
     names.append(repo['name'])
     plot_dict = {
         'value': repo['stargazers_count'],
-        'label': repo['description']
+        'label': repo['description'],
+        'xlink': repo['html_url']
     }
     plot_dicts.append(plot_dict)
     # print('\n')   
