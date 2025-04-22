@@ -2,6 +2,8 @@
 
 ### chapter 18 Django
 
+#### 1. 建立项目(learning_log)
+
 - 建立虚拟环境: `python3 -m venv ll_env`
 - 激活虚拟环境: `source ll_env/bin/activate`
 - 停止虚拟环境: `deactivate` 或者关闭运行虚拟环境的终端
@@ -25,3 +27,21 @@
         Starting development server at http://127.0.0.1:8000/ # 指出项目的URL
         Quit the server with CONTROL-C.
         ```
+
+#### 2. 创建应用程序
+
+Django项目由一系列应用程序组成，他们协同工作，让项目成为一个整体。
+
+##### 创建应用程序所需的基础设施 
+
+- 新开一个终端
+- 激活虚拟环境
+- 执行命令: `python manage.py startapp learning_logs`
+- 会生成文件夹 learning_logs
+  - 包含重要的文件: models.py, admin.py, views.py
+- 定义模型: 在 models.py 中，定义 Topic 类
+- 激活模型: 在 settings.py 的 INSTALL_APPS 中添加: 'learning_logs'
+- 让 Django 修改数据库，使其能够存储与模型Topic相关的信息
+  - `python manage.py makemigrations learning_logs`
+  - 上面的命令让Django确定该如何修改数据库，生成一个迁移文件: `learning_logs/migrations/0001_initial.py`，这个文件将
+    在数据库中为模型Topic创建一个表
