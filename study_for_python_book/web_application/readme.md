@@ -45,3 +45,8 @@ Django项目由一系列应用程序组成，他们协同工作，让项目成�
   - `python manage.py makemigrations learning_logs`
   - 上面的命令让Django确定该如何修改数据库，生成一个迁移文件: `learning_logs/migrations/0001_initial.py`，这个文件将
     在数据库中为模型Topic创建一个表
+  - 应用这种迁移，让Django替我们修改数据库: `python manage.py migrate` 
+    - 注意这个输出，说明迁移正常: `Applying learning_logs.0001_initial... OK`
+
+**注意：**
+每当需要修改“学习笔记”管理的数据时，都采取如下三个步骤：修改models.py；对learning_logs调用makemigrations；让Django迁移项目·
