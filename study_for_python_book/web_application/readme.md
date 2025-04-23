@@ -93,3 +93,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 - `from learning_logs.models import Topic`: 导入模块learning_logs.models中的Topic模型
 - `Topic.objects.all()`: 获取模型Topic的所有实例; 返回的是列表，称为查询集(queryset)
 - `Ctrl + D`: 中止shell
+
+#### Django API
+ [查询数据文档](https://docs.djangoproject.com/en/5.2/topics/db/queries/)
