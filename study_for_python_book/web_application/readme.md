@@ -71,3 +71,25 @@ Django项目由一系列应用程序组成，他们协同工作，让项目成�
 - 迁移
 - 注册
 
+
+#### Django shell
+
+通过交互式终端以编程的方式查看数据。
+
+example:
+```shell
+python manage.py shell                 
+8 objects imported automatically (use -v 2 for details).
+
+Python 3.10.4 (v3.10.4:9d38120e33, Mar 23 2022, 17:29:05) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from learning_logs.models import Topic
+>>> Topic.objects.all()
+<QuerySet [<Topic: Chess>, <Topic: Rock Climbing>]>
+>>> 
+```
+- `python manage.py shell`: 启动 Django shell
+- `from learning_logs.models import Topic`: 导入模块learning_logs.models中的Topic模型
+- `Topic.objects.all()`: 获取模型Topic的所有实例; 返回的是列表，称为查询集(queryset)
+- `Ctrl + D`: 中止shell
