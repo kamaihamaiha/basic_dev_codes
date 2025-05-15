@@ -11,7 +11,10 @@ urlpatterns = [
     path(r'', views.index, name='index'),
 
     # 显示所有的主题
-    path(r'topics/', views.topics, name='topics')
+    path(r'topics/', views.topics, name='topics'),
+
+    # 特定主题的详细页面
+    path(r'topics/<int:topic_id>/', views.topic, name='topic'),
 ]
 
 

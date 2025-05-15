@@ -1,13 +1,23 @@
 {% extends "learning_logs/base.html" %} {% block content %}
 
-<p>Topics</p>
-
-<ul>
-    {% for topic in topics %}
-    <li>{{ topic }}</li>
-    {% empty %}
-    <li>No topics have been added yet.</li>
-    {% endfor %}
-</ul>
-
+{% if topic %}  <!-- 详情页 -->
+    <p>Topic: {{ topic }}</p>
+    <p>Entries:</p>
+    <ul>
+      {% for entry in entries %}
+        <li>{{ entry.date_added|date:'M d, Y H:i' }} - {{ entry.text|linebreaks }}</li>
+      {% empty %}
+        <li>There are no entries for this topic yet.</li>
+      {% endfor %}
+    </ul>
+  {% else %}  <!-- 列表页 -->
+    <p>Topics</p>
+    <ul>
+      {% for topic in topics %}
+        <li><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></li>
+      {% empty %}
+        <li>No topics have been added yet.</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endblock content %}
