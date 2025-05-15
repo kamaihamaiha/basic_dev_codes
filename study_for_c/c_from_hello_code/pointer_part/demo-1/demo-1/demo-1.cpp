@@ -22,6 +22,8 @@ int main()
     pf = (float*)100;
     pd = (double*)100;
 
+    int *pInt = pi;
+
     pc = pc + 1;
     ps = ps + 1;
     pi = pi + 1;
@@ -38,6 +40,10 @@ int main()
     printf("pll=%u\n", pll);
     printf("pf=%u\n", pf);
     printf("pd=%u\n", pd);
+
+    for(int i = 1; i <= 4; i ++) {
+        printf("pInt + %d address is %u\n",i, pInt + i);
+    }
 
 
     // 同类型指针减法运算
