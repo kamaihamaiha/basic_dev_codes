@@ -7,7 +7,7 @@
 - [chapter 1: HTML 简介](./docs/html_intro.md)
 - [chapter 3: 基础标签](./docs//basic_tag.md)
 - [chatper 4 文本](./docs/text.md)
-- [chatper 5 列表](./docs/...)
+- [chatper 5 列表](./docs/list.md)
 - [chatper 6 表格](./docs/...)
 - [chatper 7 图片](./docs/...)
 - [chatper 8 超链接](./docs/...)
