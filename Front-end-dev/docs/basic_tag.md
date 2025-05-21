@@ -7,7 +7,7 @@
 - head标签对
 - body标签对
 
-- [一个简单的页面](../index.html)
+- [一个简单的页面](../basic_tag/index.html)
 
 ### head标签
 
@@ -53,4 +53,4 @@
 
 ### body 标签
 
-- [举例： 静夜思](../quiet_night_thoughts.html)
+- [举例： 静夜思](../basic_tag/quiet_night_thoughts.html)

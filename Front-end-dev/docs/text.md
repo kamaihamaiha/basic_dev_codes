@@ -39,7 +39,7 @@
   - div标签
     - 划分HTML结构，结合css针对该区域进行样式控制
     - 内部可以放所有其他标签  
-    - [代码](../div_intro.html)  
+    - [代码](../text_tag/div_intro.html)  
 
 #### 自闭合标签
 
@@ -52,7 +52,7 @@
 
 只有开始符号没有结束符号，内部不可以插入其他标签或文字
 
-[代码举例](../text_tag_intro.html)    
+[代码举例](../text_tag/text_tag_intro.html)    
 
 #### 块元素和行内元素
 
@@ -97,3 +97,5 @@
 #### 练习，把下面的网页效果做出来
 
 ![](imgs/text_practice_html.jpg)
+
+[练习代码](../text_tag/my_practice.html)
