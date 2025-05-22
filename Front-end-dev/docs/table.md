@@ -38,3 +38,12 @@ th和td在本质上都是单元格，但是并不代表两者可以互换，它�
 
 - rowspan
 - colspan
+
+[代码: span_demo.html](../table_tag/span_demo.html)
+
+在实际开发中，合并行与合并列用得很少，如果忘了，等需要的时候回来这里查一下即可。
+
+
+### 编程题
+
+[代码: practice.html](../table_tag/practice.html)
