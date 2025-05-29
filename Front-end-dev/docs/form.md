@@ -38,7 +38,7 @@
 - button/submit/reset
 - file
 
-##### 单行文本框
+#### 单行文本框
 
 `<input type="text"/>`
 
@@ -47,13 +47,21 @@
 - size: 文本框长度
 - maxlength: 文本框最多输入字符数
 
-##### 密码文本框
+#### 密码文本框
 `<input type="password"/>`
 
-##### 单选框
+#### 单选框
 `<input type="radio"/>`
 
 - 对于“同一组”的单选框，必须要设置一个相同的name，这样才会把这些选项归为同一个组上面;
 - 为了得到更好的语义化，表单元素与后面的文本一般都需要借助label标签关联起来。
   - 见代码中的 年龄单选框
   - 见代码中的 年龄单选框
+
+#### 复选框
+
+`<input type="checkbox" name="组名", value="取值"`
+
+#### 普通按钮button
+在HTML中，普通按钮一般情况下都是配合JavaScript来进行各种操作的。
+`<input type="button" value="取值"`

@@ -5,6 +5,16 @@
 <head>
     <meta charset="utf-8" />
     <title>表单标签</title>
+    <script>
+        window.onload = function () {
+            // var oBtn = document.getElementsByTagName("input")
+            var loveButton = document.querySelector('input[type="button"][value="love"]');
+            loveButton.onclick = function () {
+                alert("I love html!");
+            };
+        }
+    </script>
+
 </head>
 
 <body>
@@ -33,6 +43,13 @@
         <label><input type="radio" name="age" value="80后"/> 80后</label>
         <label><input type="radio" name="age" value="90后"/> 90后</label>
         <label><input type="radio" name="age" value="00后"/> 00后</label>
+        <br/>喜欢的水果: <br/>
+        <label><input type="checkbox" name="fruit" value="apple"></label> 🍎
+        <label><input type="checkbox" name="fruit" value="banana" checked></label> 🍌
+        <label><input type="checkbox" name="fruit" value="watermelon"></label> 🍉
+        <label><input type="checkbox" name="fruit" value="plum"></label> 李子
+        <br/>
+        <input type="button" value="love">
     </form>
 </body>
 
