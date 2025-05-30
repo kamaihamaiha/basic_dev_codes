@@ -47,6 +47,9 @@
 - size: 文本框长度
 - maxlength: 文本框最多输入字符数
 
+#### 多行文本框
+`<textarea rows="行数" cols="列数" value="取值">xxx</textarea>`
+
 #### 密码文本框
 `<input type="password"/>`
 
