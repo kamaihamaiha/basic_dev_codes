@@ -82,3 +82,28 @@
 
 #### 文件上传
 `<input type="file">`
+
+#### 下拉列表
+```html
+<select>
+  <option>选项1</option>
+  ...
+  <option>选项n</option>
+</select>
+```
+
+**属性:**
+
+- multiple: 可以选择多项
+- size: 设置下拉列表显示几个列表项目
+
+##### option 标签属性
+
+- selected
+- value
+
+---
+
+### 编程题
+
+[代码 practice.html](../form_tag/practice.html)

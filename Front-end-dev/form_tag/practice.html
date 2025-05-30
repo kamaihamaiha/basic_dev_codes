@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单-编程题</title>
+</head>
+<body>
+    <form method="post">
+        昵称: <input type="text" size="20" maxlength="15"> <br/>
+        密码: <input type="password" size="20" maxlength="15"> <br/>
+        邮箱: <input type="text" size="20" maxlength="15">
+        <select>
+            <option selected>qq.com</option>
+            <option>163.com</option>
+            <option>outlook.com</option>
+            <option>gmail.com</option>
+            <option>foxmail.com</option>
+        </select><br/>
+        性别: <input type="radio" name="gender" value="男" checked> 男
+        <input type="radio" name="gender" value="女"> 女
+        <br/>
+        爱好:
+        <label><input type="checkbox" name="favour" value="旅游"></label> 旅游
+        <label><input type="checkbox" name="favour" value="摄影"></label> 摄影
+        <label><input type="checkbox" name="favour" value="运动"></label> 运动
+        <br/>
+        个人简介:<br/>
+        <textarea rows="8" cols="33">
+        </textarea>
+        <br/>
+        上传个人照片:<br/>
+        <input type="file" name="选择文件">
+        <hr/>
+        <div style="text-align: center">
+            <input type="submit" value="立即注册">
+        </div>
+    </form>
+</body>
+</html>
