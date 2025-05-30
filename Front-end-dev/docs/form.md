@@ -65,3 +65,17 @@
 #### 普通按钮button
 在HTML中，普通按钮一般情况下都是配合JavaScript来进行各种操作的。
 `<input type="button" value="取值"`
+
+#### 提交按钮 submit
+提交按钮一般都是用来给服务器提交数据的
+`<input type="submit" value="取值"`
+
+
+#### 重制按钮 reset
+重置按钮一般用来清除用户在表单中输入的内容
+`<input type="reset" value="取值"`
+
+- 点击后，会清空所在 form标签内的表单内容
+
+#### 文件上传
+`<input type="file">`
