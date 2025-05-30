@@ -12,7 +12,7 @@
 - [chatper 7 图片](./docs/img.md)
 - [chatper 8 超链接](./docs/hyper_link.md)
 - [chatper 9 表单](./docs/form.md)
-- [chatper 10 框架](./docs/...)
+- [chatper 10 框架](./docs/frame.md)
 
 ### CSS基础
 - [chapter 1: CSS简介](./docs/css/)
