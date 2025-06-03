@@ -15,7 +15,7 @@
 - [chatper 10 框架](./docs/frame.md)
 
 ### CSS基础
-- [chapter 1: CSS简介](./docs/css/)
+- [chapter 1: CSS简介](./docs/css/intro.md)
 - [chapter 2: css选择器](./docs/css/)
 - [chapter 3: 字体样式](./docs/css/)
 - [chapter 4: 文本样式](./docs/css/)
