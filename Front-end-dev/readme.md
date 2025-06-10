@@ -5,7 +5,7 @@
 ---
 ### HTML基础
 - [chapter 1: HTML 简介](./docs/html_intro.md)
-- [chapter 3: 基础标签](./docs//basic_tag.md)
+- [chapter 3: 基础标签](./docs/basic_tag.md)
 - [chatper 4 文本](./docs/text.md)
 - [chatper 5 列表](./docs/list.md)
 - [chatper 6 表格](./docs/table.md)
@@ -17,7 +17,7 @@
 ### CSS基础
 - [chapter 1: CSS简介](./docs/css/intro.md)
 - [chapter 2: css选择器](./docs/css/selector.md)
-- [chapter 3: 字体样式](./docs/css/)
+- [chapter 3: 字体样式](./docs/css/font_style)
 - [chapter 4: 文本样式](./docs/css/)
 - [chapter 5: 边框样式](./docs/css/)
 - [chapter 6: 列表样式](./docs/css/)
