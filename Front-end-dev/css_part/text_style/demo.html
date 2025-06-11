@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <style type="text/css">
+        .p_indent {
+            font-size: 16px;
+            /*首行缩进*/
+            text-indent: 32px;
+        }
+        /*水平对齐*/
+        #p_align_l {
+            text-align: left;
+        }
+        #p_align_c {
+            text-align: center;
+        }
+        #p_align_r {
+            text-align: right;
+        }
+        /*文本修饰*/
+        #p_deco_under {
+            text-decoration: underline;
+        }
+        #p_deco_through {
+            text-decoration: line-through;
+        }
+        #p_deco_over {
+            text-decoration: overline;
+        }
+        #p_deco_none {
+            text-decoration: none;
+        }
+        /*大小写*/
+        #p_trans_u {
+            text-transform: uppercase;
+        }
+        #p_trans_l {
+            text-transform: lowercase;
+        }
+        #p_trans_c {
+            text-transform: capitalize;
+        }
+        /*行高*/
+        #p_lh_1 {
+            line-height: 15px;
+        }
+        #p_lh_2 {
+            line-height: 20px;
+        }
+        #p_lh_3 {
+            line-height: 25px;
+        }
+        /*间距*/
+        #p_letter_space_1 {
+            letter-spacing: 0px;
+        }
+        #p_letter_space_2 {
+            letter-spacing: 3px;
+        }
+        #p_letter_space_3 {
+            letter-spacing: 5px;
+        }
+        #p_word_space_1 {
+            word-spacing: 0px;
+        }
+        #p_word_space_2 {
+            word-spacing: 3px;
+        }
+        #p_word_space_3 {
+            word-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>爱莲说</h3>
+    <p class="p_indent">水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p>
+    <p class="p_indent">菊，花之隐逸者也；牡丹，花之富贵者也；莲，花之君子者也。噫！菊之爱，陶后鲜有闻；莲之爱，同予者何人？牡丹之爱，宜乎众矣。</p>
+    <hr/>
+    <h3>水平对齐</h3>
+    <div id="p_align_l">好好学习，天天向上(left)</div>
+    <div id="p_align_c">好好学习，天天向上(center)</div>
+    <div id="p_align_r">好好学习，天天向上(right)</div>
+    <hr/>
+    <h3>文本修饰 text-decoration</h3>
+    <div id="p_deco_over">好好学习，天天向上</div>
+    <div id="p_deco_through">好好学习，天天向上</div>
+    <div id="p_deco_under">好好学习，天天向上</div>
+    <h4>超链接去掉默认的底部下划线</h4>
+    <a href="http://www.github.com" id="p_deco_none">github网站</a>
+    <h4>超链接去掉默认的底部下划线(行内样式表方式)</h4>
+    <a href="http://www.github.com" style="text-decoration: none;">github网站</a>
+    <hr/>
+    <h3>大小写</h3>
+    <p id="p_trans_l">rome was't build in a day.</p>
+    <p id="p_trans_c">rome was't build in a day.</p>
+    <p id="p_trans_u">rome was't build in a day.</p>
+    <hr/>
+    <h3>行高</h3>
+    <p id="p_lh_1">水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p>
+    <p id="p_lh_2">水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p>
+    <p id="p_lh_3">水陆草木之花，可爱者甚蕃。晋陶渊明独爱菊。自李唐来，世人甚爱牡丹。予独爱莲之出淤泥而不染，濯清涟而不妖，中通外直，不蔓不枝，香远益清，亭亭净植，可远观而不可亵玩焉。</p>
+    <hr/>
+    <h3>间距</h3>
+    <p id="p_letter_space_1">rome was't build in a day. 罗马不是一天建成的。</p>
+    <p id="p_letter_space_2">rome was't build in a day. 罗马不是一天建成的。</p>
+    <p id="p_letter_space_3">rome was't build in a day. 罗马不是一天建成的。</p>
+    <p id="p_word_space_1">rome was't build in a day. 罗马不是一天建成的。</p>
+    <p id="p_word_space_2">rome was't build in a day. 罗马不是一天建成的。</p>
+    <p id="p_word_space_3">rome was't build in a day. 罗马不是一天建成的。</p>
+
+</body>
+</html>
