@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框样式</title>
+    <style type="text/css">
+        /*定义所有div样式*/
+        div{
+            width: 100px;
+            height: 30px;
+        }
+        /*定义单独div样式*/
+        #div1 {
+            border: 1px dashed green;
+        }
+        #div2 {
+            border-width: 1px;
+            border-color: red;
+            border-style: solid;
+        }
+        /*给图片加边框*/
+        img {
+            border: 2px solid red;
+        }
+        /*局部样式*/
+        #div_p {
+            border-top: 1px solid darksalmon;
+            border-bottom: 1px dashed green;
+            border-left: 1px solid orange;
+            border-right: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <br/>
+    <div id="div2"></div>
+    <br/>
+    <div id="div_p"></div>
+    <br/>
+    <img src="../../docs/imgs/haizei.png" alt="海贼王"/>
+</body>
+</html>
