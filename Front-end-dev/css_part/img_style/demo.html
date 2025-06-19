@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片样式</title>
+    <style type="text/css">
+        img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid red;
+        }
+        .dev1 {
+            text-align: left;
+        }
+        .dev2 {
+            text-align: center;
+        }
+        .dev3 {
+            text-align: right;
+        }
+        .div_v1 { vertical-align: top;}
+        .div_v2 { vertical-align: middle}
+        .div_v3 { vertical-align: baseline}
+        .div_v4 { vertical-align: bottom}
+
+        #img_float {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <img src="../../docs/imgs/gradle.png" alt="gradle图标"/>
+    <h3>图片水平对齐</h3>
+    <div class="dev1">
+        <img src="../../docs/imgs/gradle.png" alt="gradle图标"/>
+    </div>
+    <div class="dev2">
+        <img src="../../docs/imgs/gradle.png" alt="gradle图标"/>
+    </div>
+    <div class="dev3">
+        <img src="../../docs/imgs/gradle.png" alt="gradle图标"/>
+    </div>
+    <hr/>
+    <h3>图片垂直对齐</h3>
+    春眠不觉晓<img class="div_v1" src="../../docs/imgs/gradle.png" alt="">处处闻啼鸟(top)
+    <hr/>
+    春眠不觉晓<img class="div_v2" src="../../docs/imgs/gradle.png" alt="">处处闻啼鸟(middle)
+    <hr/>
+    春眠不觉晓<img class="div_v3" src="../../docs/imgs/gradle.png" alt="">处处闻啼鸟(baseline)
+    <hr/>
+    春眠不觉晓<img class="div_v4" src="../../docs/imgs/gradle.png" alt="">处处闻啼鸟(bottom)
+    <hr/>
+    <h3>文字环绕</h3>
+    <img id="img_float" src="../../docs/imgs/gradle.png" alt="">
+    <p>Gradle is a highly scalable build automation tool designed to handle everything from large, multi-project enterprise builds to quick development tasks across various languages. Gradle’s modular, performance-oriented architecture seamlessly integrates with development environments, making it a go-to solution for building, testing, and deploying applications on Java, Kotlin, Scala, Android, Groovy, C++, and Swift.</p>
+</body>
+</html>
