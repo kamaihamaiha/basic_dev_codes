@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <style type="text/css">
+        table, tr, td {
+            border: 1px solid silver;
+        }
+        table {
+            caption-side: bottom;
+            border-collapse: collapse;
+            /*border-collapse: separate 时才有用*/
+            border-spacing: 12px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>成绩统计</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>分数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>55</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>平均分</td>
+                <td>60</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
