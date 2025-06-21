@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图片重复</title>
+  <style type="text/css">
+    div {
+      width: 200px;
+      height: 100px;
+      border: 1px solid silver;
+      background-image: url("../../docs/imgs/ic_bookmark.png");
+    }
+    #br {
+      background-repeat: repeat;
+    }
+    #br_x {
+      background-repeat: repeat-x;
+    }
+    #br_y {
+      background-repeat: repeat-y;
+    }
+    #br_r {
+      background-repeat: round;
+    }
+    #br_o {
+      background-repeat: no-repeat;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="br">repeat</div>
+    <div id="br_x">repeat_x</div>
+    <div id="br_y">repeat_y</div>
+    <div id="br_r">repeat_round</div>
+    <div id="br_o">no-repeat</div>
+</body>
+</html>
