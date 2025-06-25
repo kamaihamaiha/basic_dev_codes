@@ -38,3 +38,20 @@ a:hover{xxx}
 元素:hover{xxx}
 ```
 [代码 demo_hover](../../css_part/hyperlink_style/demo_hover.html)
+
+这个应用非常广泛
+
+### 鼠标样式
+- 浏览器鼠标样式
+- 自定义鼠标样式
+
+#### 浏览器鼠标样式
+``cursor:取值``
+属性值很多，一般用到三种:default, pointer, text
+#### 自定义鼠标样式
+``cursor:url(图片地址), 属性值;``
+属性值三种:default, pointer, text
+
+[代码 demo_cursor](../../css_part/hyperlink_style/demo_cursor.html)
+
+mac 上面没有效果，没找到原因

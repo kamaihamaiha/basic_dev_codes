@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标样式</title>
+    <style type="text/css">
+      div {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: hotpink;
+        color: white;
+        font-size: 14px;
+      }
+      #div_cursor_d {
+        cursor: default;
+      }
+      #div_cursor_p {
+        cursor: pointer;
+      }
+      #div_cursor_t {
+        cursor: text;
+      }
+      #div_cursor_w {
+        cursor: wait;
+      }
+      /*自定义鼠标样式*/
+      #div_my_cursor_1 {
+          cursor: url("../../docs/imgs/icon_download.png"), default;
+      }
+    </style>
+</head>
+<body>
+    <div id="div_cursor_d">鼠标默认样式</div>
+    <div id="div_cursor_p">鼠标手状样式</div>
+    <div id="div_cursor_t">鼠标文本插入样式</div>
+    <div id="div_cursor_w">鼠标等待样式</div>
+    <br/>
+    <h3>自定义鼠标样式</h3>
+    <div id="div_my_cursor_1">鼠标自定义样式</div>
+
+</body>
+</html>
